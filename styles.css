@@ -1,0 +1,115 @@
+/* Wichita Auto Glass Repair - navy + Kansas wheat palette */
+:root{
+  --navy:#0f172a; --navy-2:#1e293b; --wheat:#e8b04b; --wheat-d:#c98f22;
+  --ink:#1f2937; --muted:#556070; --light:#f4f1ea; --line:#e5e1d6; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.65;font-size:17px;background:var(--white)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.narrow{max-width:820px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:3px solid var(--wheat)}
+.nav-in{max-width:1140px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:18px}
+.logo-mark{width:34px;height:34px;border-radius:8px;background:var(--wheat);color:var(--navy);display:grid;place-items:center;font-weight:900}
+.links{display:flex;gap:22px}
+.links a{color:#cbd5e1;text-decoration:none;font-weight:600;font-size:15px}
+.links a.on,.links a:hover{color:#fff}
+.nav-call{background:var(--wheat);color:var(--navy);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:8px;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+.hero-in{position:relative;padding:96px 20px 84px}
+.badge{display:inline-block;background:rgba(232,176,75,.16);color:var(--wheat);border:1px solid rgba(232,176,75,.45);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.3px;margin-bottom:16px}
+.hero h1{font-size:46px;line-height:1.1;font-weight:900;max-width:720px}
+.hero-sub{font-size:19px;color:#e2e8f0;max-width:620px;margin:16px 0 10px}
+.hero-phone a{font-size:30px;font-weight:900;color:var(--wheat);text-decoration:none}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:800;text-decoration:none;font-size:16px;border:2px solid transparent;cursor:pointer}
+.btn-wheat{background:var(--wheat);color:var(--navy)}
+.btn-wheat:hover{background:var(--wheat-d)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-outline{border-color:var(--navy);color:var(--navy)}
+.btn-dark{background:var(--navy);color:#fff}
+
+/* strip */
+.strip{background:var(--light);border-bottom:1px solid var(--line)}
+.strip-in{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 20px}
+.strip-in div{display:flex;flex-direction:column}
+.strip-in strong{color:var(--navy);font-size:16px}
+.strip-in span{color:var(--muted);font-size:14px}
+
+/* page head */
+.page-head{background:var(--navy);color:#fff;padding:64px 0 54px;border-bottom:3px solid var(--wheat)}
+.page-head h1{font-size:40px;line-height:1.15;font-weight:900;max-width:820px}
+.page-head p{color:#e2e8f0;max-width:760px;margin-top:14px;font-size:18px}
+.page-head .btn-outline{border-color:#fff;color:#fff}
+.page-head a[style]{color:#93c5fd !important}
+
+/* sections */
+.section{padding:64px 0}
+.section.alt{background:var(--light)}
+.section h2{font-size:30px;line-height:1.2;color:var(--navy);margin-bottom:16px;font-weight:850}
+.section p{margin-bottom:14px;color:var(--ink)}
+.split{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.split figure img{max-height:460px;width:100%;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(15,23,42,.15)}
+.ticks{list-style:none;margin:6px 0 16px}
+.ticks li{position:relative;padding:8px 0 8px 30px;border-bottom:1px dashed var(--line)}
+.ticks li:before{content:"";position:absolute;left:4px;top:17px;width:12px;height:12px;border-radius:3px;background:var(--wheat)}
+.muted{color:var(--muted);margin-bottom:16px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.faq-card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--wheat);border-radius:12px;padding:20px}
+.faq-card h3{font-size:18px;color:var(--navy);margin-bottom:8px;line-height:1.35}
+.faq-card p{font-size:16px;margin:0}
+
+/* map */
+.addr-note{max-width:640px;margin:0 auto 24px;padding:14px 18px;background:var(--light);border-left:4px solid var(--wheat);border-radius:8px;font-size:15px;color:var(--muted);line-height:1.6;text-align:left}
+.map-box{border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.10);max-width:960px;margin:0 auto}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.contact-grid figure img{border-radius:12px;margin-top:10px}
+.form{display:flex;flex-direction:column;gap:14px}
+.form label{display:flex;flex-direction:column;font-weight:700;font-size:15px;color:var(--navy);gap:6px}
+.form input,.form textarea{font:inherit;padding:12px;border:1px solid #cfc8b8;border-radius:8px;background:#fff}
+.form button{align-self:flex-start}
+
+/* cta band */
+.cta-band{background:var(--wheat);padding:44px 0}
+.cta-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta-band h2{color:var(--navy);font-size:28px;font-weight:900}
+.cta-band p{color:var(--navy)}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+.cta-band .btn-ghost{border-color:var(--navy);color:var(--navy)}
+
+/* footer */
+.foot{background:var(--navy);color:#cbd5e1;padding:52px 0 20px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+.foot a{color:#fff}
+.foot ul{list-style:none}
+.foot li{padding:3px 0}
+.foot-name{color:#fff;font-weight:800;font-size:18px;margin-bottom:6px}
+.foot-h{color:var(--wheat);font-weight:800;margin-bottom:8px}
+.foot-areas{columns:2}
+.copy{text-align:center;margin-top:30px;color:#94a3b8;font-size:13px}
+
+@media (max-width:900px){
+  .links{display:none}
+  .split,.contact-grid,.faq-grid,.foot-grid{grid-template-columns:1fr}
+  .strip-in{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:34px}
+  .page-head h1{font-size:30px}
+  .hero-in{padding:64px 20px 56px}
+}
+@media (max-width:480px){
+  .logo{font-size:15px}
+  .nav-call{padding:9px 11px;font-size:14px}
+  .strip-in{grid-template-columns:1fr}
+}
